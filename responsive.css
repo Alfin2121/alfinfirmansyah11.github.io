@@ -21,10 +21,6 @@
 
 /* max-width 670px : mobile*/
 @media all and (max-width:670px) {
-    body {
-        overflow-x: hidden;
-    }
-
     .header-logo h1 {
         font-size: 20px;
     }
@@ -94,7 +90,7 @@
         height: 150px;
         align-items: center;
         position: absolute;
-        transform: translateX(100%);
+        visibility: hidden;
         transition: all 1s;
         z-index: 2;
     }
@@ -104,7 +100,8 @@
     }
 
     .header-wrapp ul.slide {
-        transform: translateX(0);
+        visibility: visible;
+        transition: all 0.8s;
     }
 
     .content-wrapp {
